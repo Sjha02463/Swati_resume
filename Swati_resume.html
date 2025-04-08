@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swati Kumari Jha - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            padding: 20px;
+        }
+
+        .resume-container {
+            width: 100%;
+            max-width: 794px;
+            /* A4 width */
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2.3em;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 0.95em;
+            word-break: break-word;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        section h2 {
+            font-size: 1.5em;
+            color: #0073b1;
+            border-bottom: 1px solid #0073b1;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        p,
+        li {
+            font-size: 0.95em;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        h3 {
+            font-size: 1.2em;
+            color: #333;
+            margin: 10px 0 5px;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+
+        a {
+            color: #0073b1;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .certifications-prof-experience {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .certifications-prof-experience {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Print Styles for A4 */
+        @media print {
+            body {
+                background: none;
+                padding: 0;
+            }
+
+            .resume-container {
+                box-shadow: none;
+                width: 210mm;
+                min-height: 297mm;
+                padding: 20mm;
+                margin: 0 auto;
+                page-break-after: always;
+            }
+
+            a {
+                color: black;
+                text-decoration: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="resume-container">
+        <header>
+            <h1>Swati Kumari Jha</h1>
+            <p>
+                Email: <a href="mailto:jha317733@gmail.com">jha317733@gmail.com</a> |
+                Phone: <a href="tel:+916202015252">6202015252</a> |
+                <a href="https://linkedin.com/in/swati-kumari-jha-57076a260" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/Sjha02463" target="_blank">GitHub</a> |
+                <a href="https://leetcode.com/u/sjha0202/" target="_blank">LeetCode</a>
+            </p>
+        </header>
+
+        <section class="summary">
+            <h2>Professional Summary</h2>
+            <p>I am a dedicated and highly motivated 3rd-year Computer Science Engineering student with a strong passion
+                for leveraging technology to solve real-world problems. I am seeking a summer internship to apply my
+                skills and gain hands-on experience.</p>
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            <p><strong>B.Tech, Computer Science and Engineering</strong>, Birla Institute of Technology, Mesra, Ranchi
+                (2026) | CGPA: 7.646</p>
+        </section>
+
+        <section class="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <ul>
+                    <li>Programming: Python (Basic), C, Java, SQL</li>
+                    <li>Cloud: AWS, Google Cloud</li>
+                </ul>
+                <ul>
+                    <li>Database: SQL, NoSQL, MongoDB, PostgreSQL</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2>Key Projects</h2>
+
+            <h3>Micromouse Autonomous Robot</h3>
+            <p>Designed a self-navigating robot that solves mazes using infrared sensors and gyroscopes.</p>
+            <ul>
+                <li>Developed algorithms to detect obstacles and adjust the route in real-time.</li>
+                <li>Used gyroscopic sensors for precise turns, improving maze-solving by 25%.</li>
+                <li>Enhanced control with encoded motors for balance and movement.</li>
+            </ul>
+
+            <h3>Talk-a-tive</h3>
+            <p>A full-stack chat application using the MERN stack with real-time chatting and group features.</p>
+            <ul>
+                <li>Frontend: React, Chakra UI, Socket.io-client</li>
+                <li>Backend: Node.js, Express.js, Socket.io</li>
+                <li>Database: MongoDB | Auth: JWT | Cloud Storage: Cloudinary</li>
+                <li><a href="https://github.com/Sjha02463/talk-a-tive.git" target="_blank">GitHub Repository</a></li>
+            </ul>
+
+            <h3>Movie Recommendation System</h3>
+            <p>A content-based movie recommender system using cosine similarity.</p>
+            <ul>
+                <li>Tech Stack: Python, Pandas, Numpy</li>
+                <li>Machine Learning: Cosine Similarity</li>
+                <li>Web Framework: Streamlit</li>
+                <li><a href="https://github.com/Sjha02463/Machine-learning-projects.git" target="_blank">GitHub
+                        Repository</a></li>
+            </ul>
+        </section>
+
+        <div class="certifications-prof-experience">
+            <section class="certifications">
+                <h2>Certifications</h2>
+                <p><strong>Machine Learning </strong> – GFG, Udemy (2024)</p>
+                <ul>
+                    <li>Specialized in supervised learning, data preprocessing, and vulnerability assessments.</li>
+                </ul>
+                <p><strong>Web Development </strong> – Coding Ninjas(2024)</p>
+                <ul>
+                    <li>Website development using MERN stack</li>
+                </ul>
+            </section>
+
+            <section class="professional-experience">
+                <h2>Professional Experience</h2>
+                <h3>Technical Member, Google Developer Student Club (GDSC)</h3>
+                <p>BIT Mesra | Feb 2023 - Dec 2023</p>
+                <p>Led technical initiatives, organized hackathons, and mentored peers in collaborative tech projects.
+                </p>
+            </section>
+        </div>
+    </div>
+
+</body>
+
+</html>
